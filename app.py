@@ -14,5 +14,6 @@ def generate_buzz():
     page += '</h1></body></html>'
     return page
 
+def_port = int(os.getenv('PORT', 5000))
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=os.getenv('PORT')) # port 5000 is the default
+    app.run(host='0.0.0.0', port=def_port) # port 5000 is the default
